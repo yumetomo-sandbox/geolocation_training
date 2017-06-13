@@ -86,6 +86,8 @@
         '位置情報の取得に時間がかかり過ぎたため、タイムアウトしました。'
     	];
 
+      $('#result').html('<p>位置情報の取得に失敗しました。</p>');
+
       alert(errorMessage[error.code]);
 
     }
@@ -104,7 +106,7 @@
       'enableHighAccuracy': false,
       'timeout': 8000,
       'maximumAge': 1000
-      
+
     };
 
   });
